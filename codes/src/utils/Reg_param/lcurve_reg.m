@@ -22,7 +22,7 @@ for ee = 1:npoints
    if mod(ee, 50) == 0
        disp([num2str(ee) '/' num2str(npoints)])
    end
-   [Xtemp(:, ee), rho(ee), eta(ee)] = reg_add_lambda(A, b, q, lambda(ee)); 
+   [Xtemp(:, ee), rho(ee), eta(ee)] = reg_add_lambda(A, b, q, lambda(ee));
 end
 
 % Computation of the curvature
@@ -37,7 +37,3 @@ res.lambda = lambda;
 res.rho = rho;
 res.eta = eta;
 res.k = k;
-
-
-
-    
